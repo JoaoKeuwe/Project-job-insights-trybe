@@ -6,7 +6,7 @@ from . import jobs
 def read_brazilian_file(path):
     """Reads a portuguese file from a given path and returns its contents
 
-    Parameters
+    Parameter
     ----------
     path : str
         Full path to file
