@@ -37,21 +37,12 @@ get_unique_industries("src/jobs.csv")
 
 
 def filter_by_industry(jobs, industry):
-    """Filters a list of jobs by industry
+    listD = [list for list in jobs if list["industry"] == industry]
+    return listD
 
-    Parameters
-    ----------
-    jobs : list
-        List of jobs to be filtered
-    industry : str
-        Industry for the list filter
-
-    Returns
-    -------
-    list
-        List of jobs with provided industry
-    """
-    return []
+# nomeei como 'ListD', list dictionary
+    # pois o lint reclamava de
+    #  tamanho de linha então diminui o nome da variável
 
 
 def get_max_salary(path):
