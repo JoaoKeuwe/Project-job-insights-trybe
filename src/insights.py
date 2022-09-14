@@ -12,21 +12,12 @@ def get_unique_job_types(path):
 
 
 def filter_by_job_type(jobs, job_type):
-    """Filters a list of jobs by job_type
+    listD = [list for list in jobs if list["job_type"] == job_type]
+    return listD
 
-    Parameters
-    ----------
-    jobs : list
-        List of jobs to be filtered
-    job_type : str
-        Job type for the list filter
-
-    Returns
-    -------
-    list
-        List of jobs with provided job_type
-    """
-    return []
+# nomeei como 'ListD', list dictionary
+    # pois o lint reclamava de
+    #  tamanho de linha então diminui o nome da variável
 
 
 def get_unique_industries(path):
