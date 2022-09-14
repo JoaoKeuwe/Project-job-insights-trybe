@@ -72,21 +72,11 @@ def get_max_salary(path):
 
 
 def get_min_salary(path):
-    """Get the minimum salary of all jobs
-
-    Must call `read`
-
-    Parameters
-    ----------
-    path : str
-        Must be passed to `read`
-
-    Returns
-    -------
-    int
-        The minimum salary paid out of all job opportunities
-    """
-    pass
+    reader = read(path)
+    lS = [int(s["min_salary"]) for s in reader if s["min_salary"].isnumeric()]
+    return min(lS)
+# chamei a variavel List_salary
+# de 'lS' lint reclamandod e tamanho de linha DENOVO
 
 
 def matches_salary_range(job, salary):
